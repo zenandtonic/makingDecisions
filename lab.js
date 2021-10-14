@@ -1,38 +1,62 @@
 ////////// PROBLEM 1 //////////
 /*
+
+//completed below
   Create a variable called 'lovesCode' and set it equal to true. 
   Check to see if 'lovesCode' is equal to true or false. 
   If it is true, console log "I love to code!"
   If it is not, console log "Coding has its challenges."
 */
 
-//CODE HERE
+var LovesCode = true
+if (LovesCode == true) {
+  console.log("I love to code!")
+} else {
+  console.log("Coding has its challenges.")
+}
+ 
 
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
 var brittanisAge = 34
 var amysBirthYear = 1991
-var brittanisBirthYear = 1986
+var brittanisBirthYear = 1991
+
 
 ////////// PROBLEM 2 //////////
+
+//completed below
 
 /*
   Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
 */
 
-//CODE HERE
+if (amysAge > brittanisAge){
+  console.log("Amy is older.")
+} else {
+  if (brittanisAge > amysAge)
+  console.log("Brrittani is older.")
+}
 
 
 ////////// PROBLEM 3 //////////
+
+//completed below
 
 /*
   Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
 
-//CODE HERE
+if (brittanisBirthYear === amysBirthYear){
+  console.log("They were born in the same year")
+} else {
+  console.log("They were not born in the same year.")
+}
 
 
 ////////// PROBLEM 4 //////////
+
+//completed below
 
 let temperature = 55
 let rain = true
@@ -42,61 +66,110 @@ let rain = true
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
-//CODE HERE
+if (temperature >= 80 && rain == true){
+  console.log("Wear a tshirt and bring and umbrella")
+}
+
+else if (temperature > 60 && temperature < 80 && rain == true){
+  console.log("Wear a rainjacket.")
+}
+
+else if (temperature <= 60 && rain == true){
+  console.log("Wear a jacket and bring an umbrella.")
+}
+
+else if ( temperature >= 80 && rain == false){
+  console.log("Wear a tshirt and leave the umbrella at home.")
+}
+
+else if (temperature > 60 && temperature < 80 && rain == false){
+  console.log("Wear a windbreaker.")
+}
+
+else if (temperature <= 60 && rain == false){
+  console.log("Bring a heavy jacket.")
+}
 
 
 ////////// PROBLEM 5 //////////
 
-/*
-  Create a for-loop that runs 10 times, and on each iteration logs the word 'hello'.
-*/
+//completed below
 
-//CODE HERE
+for (let i = 0; i < 10; i++){
+  console.log("Hello")
+}
 
 
 ////////// PROBLEM 6 //////////
 
+//completed below
 /*
   Create a for-loop that runs 10 times, logging the numbers 1 through 10. Ex, on the first iteration it would log 1, on the second iteration it would log 2.
 */
 
-//CODE HERE
+for (let i = 1; i <= 10; i++){
+  console.log(i)
+}
 
 
 ////////// PROBLEM 7 //////////
+
+//completed below
 
 /*
   Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the first iteration it would log 10, on the second iteration it would log 9.
 */
 
-//CODE HERE
+for (let i = 10; i >= 0; i--){
+  console.log(i)
+}
+
+
+////////// PROBLEM 8 //////////
+
+//completed below
 
 let score = 0
 let passingScore = 7
-
-////////// PROBLEM 8 //////////
 
 /*
   Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
 */
 
-//CODE HERE
+while (score < passingScore){
+  console.log("Your score is not high enough")
+  score += (1)
+}
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
+
+//couldn't figure it out :(
 /*
   Create a variable called 'changeMyMind' and set it equal to true. 
   Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, change the status to true.
 
 */
 
-//CODE HERE
+let changeMyMind = true
+
+if (changeMyMind !== false){
+  let changeMyMind = false
+  console.log(changeMyMind)
+} else {
+  let changeMymind = true
+  console.log(changeMyMind)
+}
 
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
-//CODE HERE
+//completed below
+
+console.log(changeMyMind)
+changeMyMind = (!changeMyMind)
+console.log(changeMyMind)
 
 
 
